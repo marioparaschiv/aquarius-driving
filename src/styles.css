@@ -10,7 +10,7 @@
 
 @layer base {
 	:root {
-		--hue: 0;
+		--hue: 250deg;
 	}
 
 	body {
@@ -21,8 +21,11 @@
 		@apply border-border
 	}
 
-	#root::before {
+	/* #root::before {
 		@apply bg-brand;
+		@apply h-24;
+		@apply w-24;
+		@apply md:h-[50rem];
 
 		content: '';
 		position: absolute;
@@ -30,9 +33,10 @@
 		right: 0;
 		z-index: -1;
  		width: 60rem;
-		height: 50rem;
-  	border-bottom-left-radius:100%;
-	}
+		border-bottom-left-radius: 100%;
+	} */
+
+	
 
 	/* #hero {
 		@apply bg-brand;
