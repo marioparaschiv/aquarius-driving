@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  src: url(/fonts/Manrope.woff2) format('woff2');
+}
+
+@layer base {
+	:root {
+		--hue: 0;
+	}
+
+	body {
+		@apply bg-background text-foreground font-primary text-base;
+	}
+
+	* {
+		@apply border-border
+	}
+
+	#root::before {
+		@apply bg-brand;
+
+		content: '';
+		position: absolute;
+ 		top: 0;
+		right: 0;
+		z-index: -1;
+ 		width: 60rem;
+		height: 50rem;
+  	border-bottom-left-radius:100%;
+	}
+
+	/* #hero {
+		@apply bg-brand;
+
+		position: fixed;
+		pointer-events: none;
+		z-index: -1;
+		clip-path: circle(10rem at 10px 0);
+		width: 100%;
+		margin-left:auto;
+		height: 100%;
+	} */
+}
+
+@layer utilities {
+	.animate-underline {
+		display: inline-block;
+		position: relative;
+	}
+
+	.animate-underline::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		transform: scaleX(0);
+		height: 2px;
+		bottom: 0;
+		border-radius: 10px;
+		left: 0;
+		background-color: currentColor;
+		transform-origin: bottom right;
+		transition: transform 0.25s ease-out;
+	}
+
+	.animate-underline:hover::after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
+}
