@@ -25,13 +25,16 @@ const config: Config = {
 			center: true,
 			padding: '2rem',
 			screens: {
-				'2xl': '1400px',
+				'2xl': '1700px',
 			},
 		},
 		extend: {
 			colors: {
 				brand: 'hsl(var(--hue), 100%, 65%)',
-				background: 'hsl(var(--hue), 0%, 100%)',
+				background: {
+					DEFAULT: 'hsl(var(--hue), 0%, 100%)',
+					secondary: 'hsl(var(--hue), 0%, 95%)'
+				},
 				foreground: 'hsl(var(--hue), 0%, 0%)',
 				border: 'hsl(var(--hue), 5.9%, 90%)',
 				primary: {
