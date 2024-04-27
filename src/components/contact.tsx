@@ -6,18 +6,20 @@ function Contact(props: React.ComponentProps<'div'>) {
 		<h1 className='text-4xl lg:text-5xl text-center font-semibold mb-6'>
 			Get in Contact.
 		</h1>
-		<div className='flex gap-4 w-2/3'>
-			<Input type='text' placeholder='First Name' />
-			<Input type='text' placeholder='Last Name' />
+		<div className='flex flex-col w-full gap-4 h-full items-center lg:max-w-[66.67%]'>
+			<div className='flex gap-4 w-full'>
+				<Input type='text' placeholder='First Name' />
+				<Input type='text' placeholder='Last Name' />
+			</div>
+			<div className='flex gap-4 w-full'>
+				<Input type='text' placeholder='Email' />
+				<Input type='text' placeholder='Phone Number' />
+			</div>
+			<textarea className='w-full rounded-md p-3 border outline-none transition- focus:ring' placeholder='Message' />
+			<button className='rounded-md border px-12 py-2 duration-200 ease-in transition-colors w-full hover:bg-background-secondary'>
+				Submit
+			</button>
 		</div>
-		<div className='flex gap-4 w-2/3'>
-			<Input type='text' placeholder='Email' />
-			<Input type='text' placeholder='Phone Number' />
-		</div>
-		<textarea className='w-2/3 rounded-md p-3 border outline-none transition- focus:ring' placeholder='Message' />
-		<button className='rounded-md border px-12 py-2 duration-200 ease-in transition-colors w-2/3 hover:bg-background-secondary'>
-			Submit
-		</button>
 	</div>;
 }
 
