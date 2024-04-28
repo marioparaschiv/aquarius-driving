@@ -11,6 +11,7 @@
 @layer base {
 	:root {
 		--hue: 240deg;
+
 		scroll-behavior: smooth;
 	}
 
