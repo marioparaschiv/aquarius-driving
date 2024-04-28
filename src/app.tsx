@@ -28,7 +28,7 @@ function App() {
 				</div>
 				<img
 					src='/img/car.png'
-					loading='eager'
+					loading='lazy'
 					decoding='async'
 					className='select-none w-[500px] lg:w-[700px] object-contain hue-rotate-[var(--hue)]'
 				/>
