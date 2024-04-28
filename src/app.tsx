@@ -33,7 +33,7 @@ function App() {
 					className='select-none w-[500px] lg:w-[700px] object-contain hue-rotate-[var(--hue)]'
 				/>
 			</div>
-			<div className='h-[1px] w-11/12 bg-background-secondary mx-auto' />
+			<div className='h-[1px] w-11/12 bg-secondary mx-auto' />
 			<div id='about' className='flex flex-col md:flex-row gap-6 text-secondary-fg text-center h-full'>
 				<div className='flex-col gap-4 min-w-64 p-6 min-h-64  flex items-center w-full h-full justify-start'>
 					<FaMountainSun className='text-brand' size={64} />
@@ -65,9 +65,9 @@ function App() {
 					</span>
 				</div>
 			</div>
-			<div className='h-[1px] w-11/12 bg-background-secondary mx-auto' />
+			<div className='h-[1px] w-11/12 bg-border mx-auto' />
 			<Contact />
-			<div className='h-[1px] w-11/12 bg-background-secondary mx-auto' />
+			<div className='h-[1px] w-11/12 bg-border mx-auto' />
 			<div className='flex items-center justify-center gap-2 flex-col'>
 				<div className='flex flex-col items-center justify-center gap-4'>
 					<div className='flex flex-col gap-4 justify-between items-center'>
@@ -83,7 +83,7 @@ function App() {
 					</div>
 				</div>
 				{/* <span>aquariusdrivingtuition@hotmail.com</span> */}
-				<span className='h-[1px] bg-background-secondary w-24 my-4' />
+				<span className='h-[1px] bg-border w-24 my-4' />
 				<a className='animate-underline' href='https://marioparaschiv.com'>Valentin-Mario Paraschiv</a>
 				© {new Date().getFullYear()} | All Rights Reserved.
 			</div>

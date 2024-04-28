@@ -31,18 +31,15 @@ const config: Config = {
 		extend: {
 			colors: {
 				brand: 'hsl(var(--hue), 100%, 65%)',
-				background: {
-					DEFAULT: 'hsl(var(--hue), 0%, 100%)',
-					secondary: 'hsl(var(--hue), 0%, 95%)'
-				},
+				background: 'hsl(var(--hue), 0%, 100%)',
 				foreground: 'hsl(var(--hue), 0%, 0%)',
-				border: 'hsl(var(--hue), 5.9%, 90%)',
+				border: 'hsl(var(--hue), 0%, 90%)',
 				primary: {
 					DEFAULT: 'hsl(var(--hue), 0%, 0%)',
 					fg: 'hsl(var(--hue), 0%, 25%)',
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--hue), 0%, 5%)',
+					DEFAULT: 'hsl(var(--hue), 0%, 95%)',
 					fg: 'hsl(var(--hue), 0%, 35%)',
 				},
 			}

@@ -16,7 +16,7 @@ function Contact(props: React.ComponentProps<'div'>) {
 				<Input type='text' placeholder='Phone Number' />
 			</div>
 			<textarea className='w-full rounded-md p-3 border outline-none transition- focus:ring' placeholder='Message' />
-			<button className='rounded-md border px-12 py-2 duration-200 ease-in transition-colors w-full hover:bg-background-secondary'>
+			<button className='rounded-md border px-12 py-2 duration-200 ease-in transition-colors w-full hover:bg-secondary'>
 				Submit
 			</button>
 		</div>
