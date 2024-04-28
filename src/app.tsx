@@ -77,7 +77,7 @@ function App() {
 						<a className='animate-underline font-semibold text-secondary-fg hover:text-primary-fg' href='tel:+447940484023'>
 							+44 7940484023
 						</a>
-						<a className='animate-underline text-sm font-semibold text-secondary-fg hover:text-primary-fg' href='tel:+447940484023'>
+						<a className='animate-underline text-sm font-semibold text-secondary-fg hover:text-primary-fg' href='mailto:aquariusdrivingtuition@hotmail.com'>
 							aquariusdrivingtuition@hotmail.com
 						</a>
 					</div>
