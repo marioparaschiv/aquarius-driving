@@ -35,30 +35,20 @@
 }
 
 .pound-icon {
-  display: inline-block;
 	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
 }
 
-.pound-icon::after {
-  animation: shine 5s ease-in-out  infinite;
-  animation-fill-mode: forwards;
-  content: "";
-  position: absolute;
-  top: -110%;
-  left: -210%;
-  width: 200%;
-  height: 200%;
-  opacity: 0;
-  transform: rotate(30deg);
-
-  background: rgba(255, 255, 255, 0.13);
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.13) 0%,
-    rgba(255, 255, 255, 0.13) 77%,
-    rgba(255, 255, 255, 0.5) 92%,
-    rgba(255, 255, 255, 0.0) 100%
-  );
+.pound-icon::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6));
+	animation: shine 3s ease-in-out infinite;
 }
 
 @layer utilities {
@@ -87,19 +77,12 @@
 	}
 }
 
-@keyframes shine{
-  10% {
-    opacity: 1;
-    top: -30%;
-    left: -30%;
-    transition-property: left, top, opacity;
-    transition-duration: 0.7s, 0.7s, 0.15s;
-    transition-timing-function: ease;
+@keyframes shine {
+  60% {
+    left: -100%;
   }
-  100% {
-    opacity: 0;
-    top: -30%;
-    left: -30%;
-    transition-property: left, top, opacity;
+
+	100% {
+		left: 100%;
   }
 }
