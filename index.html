@@ -158,20 +158,20 @@
 			<h1 class='contact-title'>
 				Get in Contact.
 			</h1>
-			<div class='contact-form'>
+			<form action='https://getform.io/f/pbqgvdxb' method='post' class='contact-form'>
 				<div class='contact-form-group'>
-					<input class='contact-input' type='text' placeholder='First Name' />
-					<input class='contact-input' type='text' placeholder='Last Name' />
+					<input required class='contact-input' name='First Name' type='text' placeholder='First Name *' />
+					<input required class='contact-input' name='Last Name' type='text' placeholder='Last Name *' />
 				</div>
 				<div class='contact-form-group'>
-					<input class='contact-input' type='text' placeholder='Email' />
-					<input class='contact-input' type='text' placeholder='Phone Number' />
+					<input required class='contact-input' name='Email' type='email' placeholder='Email *' />
+					<input class='contact-input' name='Phone Number' type='text' placeholder='Phone Number' />
 				</div>
-				<textarea class='contact-message' placeholder='Message'></textarea>
-				<button class='contact-submit'>
+				<textarea required name='Message' class='contact-message' placeholder='Message *'></textarea>
+				<button type='submit' class='contact-submit'>
 					Submit
 				</button>
-			</div>
+			</form>
 		</div>
 
 		<div class='divider'></div>
