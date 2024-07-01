@@ -6,3 +6,6 @@
 </div>
 
 ---
+
+## Licensing
+See [LICENSE](/LICENSE).
